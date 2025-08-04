@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us | NavGurukul</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Contact.css" />
+</head>
+<body>
+  <button class="toggle-btn" onclick="toggleDarkMode()">Toggle Mode</button>
+  <button class="lang-toggle" onclick="toggleLanguage()">EN / हिंदी</button>
+  <header>
+    <h1 id="pageTitle">Contact NavGurukul</h1>
+  </header>
+  <section class="contact-grid">
+    <div class="box">
+      <h2 id="visitTitle">Visit Us</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.190903552934!2d77.79323507494696!3d12.887655117209906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae7285b10b5e8b%3A0x3c29a4ef40d47971!2sNavgurukul!5e0!3m2!1sen!2sin!4v1699028540914!5m2!1sen!2sin" loading="lazy"></iframe>
+    </div>
+    <div class="box">
+      <h2 id="formTitle">Send a Message</h2>
+      <form id="contactForm">
+        <input type="text" id = "name" name ="name" placeholder="Your name" required>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+        <textarea id="message" name="message" rows="5" placeholder="Your Message..." required></textarea>
+        <button type="submit">Submit</button>
+        <p id="formMsg" class="error"></p>
+      </form>
+    </div>
+    <div class="box">
+      <h2 id="infoTitle">Contact Info</h2>
+      <p><strong>Email:</strong> contact@navgurukul.org</p>
+      <p><strong>Phone:</strong> +91 98765 43210</p>
+      <div class="social-links">
+        <a href="https://instagram.com/navgurukul" target="_blank">Instagram</a>
+        <a href="https://twitter.com/navgurukul" target="_blank">Twitter</a>
+        <a href="https://facebook.com/navgurukul" target="_blank">Facebook</a>
+      </div>
+      
+    </div>
+
+  </section>
+  <script src="contact.js"></script>
+</body>
+</html>

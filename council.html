@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Council Members</title>
+  <link rel="stylesheet" href="council.css" />
+</head>
+<body>
+   <div class="navbar">
+    <div class="logo">
+    <img src="images/NG logo.png" alt="NG logo">
+    </div>
+    <ul class="nav">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="About.html">About</a></li>
+  <li><a href="blog.html">Blog</a></li>
+  <li><a href="enroll.html">Enroll</a></li>
+  <li><a href="Contact.html">Contact</a></li>
+ </ul>
+</div>
+  <div class="container">
+    <h1>Council Members</h1>
+
+    <div class="controls">
+      <input type="text" id="searchInput" placeholder="🔍 Search Member..." onkeyup="searchMembers()" />
+      <button onclick="toggleDarkMode()">Dark Mode</button>
+      <button onclick="togglePhotos()">Show/Hide Photos</button>
+      <button onclick="toggleLayout()">Grid ↔ List Layout</button>
+      <button onclick="toggleAnimation()">Animation On/Off</button>
+    </div>
+
+    <div class="members grid-view">
+      <div class="member" onclick="flipCard(this)">
+        <img src="img/priya.jpeg" alt="Ishika Yadav" />
+        <p>Discipline Coordinator — Ishika Yadav</p>
+      </div>
+      <div class="member" onclick="flipCard(this)">
+        <img src="img/sarika2.jpeg" alt="Sarika Bauddha" />
+        <p>Discipline Coordinator — Sarika Budha</p>
+      </div>
+      <div class="member" onclick="flipCard(this)">
+        <img src="img/jayu.jpeg" alt="Jaya Dubey" />
+        <p>Academic Facilitator (SOP) – Jaya Dubey</p>
+      </div>
+      <div class="member" onclick="flipCard(this)">
+        <img src="img/lali.jpeg" alt="Lalima Pal" />
+        <p>Outreach Specialist – Lalima Pal</p>
+      </div>
+      <div class="member neon-frame" onclick="flipCard(this)">
+        <img src="img/muskan.jpeg" alt="Muskan Singh" />
+        <p>English Facilitator – Muskan Singh</p>
+      </div>
+    
+      <div class="member" onclick="flipCard(this)">
+        <img src="img/priyan.jpeg" alt="Priyanka Kothmire" />
+        <p>Placement Specialist – Priyanka Kothmire</p>
+      </div>
+      <div class="member" onclick="flipCard(this)">
+        <img src="img/yogi.jpeg" alt="Yogyata Dangwal" />
+        <p>Hackathon & Innovation Incharge – Yogyata Dangwal</p>
+      </div>
+      <div class="member" onclick="flipCard(this)">
+        <img src="img/Bhawna.jpeg" alt="Bhawana Nimbavat" />
+        <p>Facility Coordinator – Bhawana Nimbavat</p>
+      </div>
+      <div class="member" onclick="flipCard(this)">
+        <img src="img/arohi.jpeg" alt="Arohi Singh" />
+        <p>Food Coordinator Incharge – Arohi Singh</p>
+      </div>
+      <div class="member" onclick="flipCard(this)">
+        <img src="img/richa.jpeg" alt="Richa Yadav" />
+        <p>Food Coordinator Incharge – Richa Yadav</p>
+      </div>
+      <div class="member" onclick="flipCard(this)">
+        <img src="img/anka.jpeg" alt="Akanksha Singh" />
+        <p>Onboarding & Induction Facilitator – Akanksha Singh</p>
+      </div>
+      <div class="member" onclick="flipCard(this)">
+        <img src="img/durgeshwari.jpeg" alt="Durgeshwari Rathia" />
+        <p>Health & Hygiene Coordinator – Durgeshwari Rathia</p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-section about">
+      <img src="images/NG logo.png" alt="NavGurukul Logo" class="footer-logo">
+       <div class="footer-section">
+      <h3>Contact</h3>
+      <p>Phone: +91-88615 53413</p>
+      <p>Email: info@navgurukul.org</p>
+      <p>Campus Address: No. 68/16A, Halanayakanahalli Village, Varthur, East, Uttarahalli Hobli, Banglore Karnataka 560035 </p>
+ </div> 
+    </div>
+
+    <div class="footer-section">
+      <h3>Programs</h3>
+      <ul>
+        <li>Full Stack Web Development</li>
+        <li>Spoken English & Communication</li>
+        <li>Life Skills & Leadership</li>
+        <li>Hackathons & Innovation Events</li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="https://www.instagram.com/ng_sarjapur/">Instagram</a></li>
+        <li><a href="https://www.navgurukul.org/">Official Website</a></li>
+        <li><a href="https://www.linkedin.com/company/navgurukul/">LinkedIn</a></li>
+        <li><a href="https://www.navgurukul.org/privacy">Legal & Privacy Policy</a>
+</li>
+      </ul>        
+   </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>Yogyata Dangwal & Muskan Singh | @ NavGurukul Sarjapur</p>
+  </div>
+</footer>
+
+  <script src="council.js"></script>
+  <script>
+    // Flip card on click
+    function flipCard(el) {
+      el.classList.toggle("flipped");
+    }
+  </script>
+</body>
+</html>

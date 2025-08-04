@@ -1,0 +1,290 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fdfdfd;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+  text-align: center;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 30px;
+  background-color: #4b678d;
+  color: white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 50px;
+}
+
+/* ✅ Nav Links */
+.nav {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav li {
+  transition: transform 0.2s ease;
+}
+
+.nav li:hover {
+  transform: scale(1.05);
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: rgb(53, 169, 214);
+}
+
+header {
+  background-image: url(images/all.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+ width: 100%;
+  font-weight: 1000px;
+  margin-top: 100px;
+  padding: 90px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 50px;
+  margin-bottom: 3px;
+  padding: 20px;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.137);
+}
+
+/* Sections */
+main section {
+  background: rgba(207, 193, 193, 0.171);
+  margin: 45px;
+  padding: 35px;
+  border-radius: 12px;
+  transition: transform 0.2s ease;
+  font-size: 20px;
+  text-align: left;
+}
+
+main section:hover {
+  transform: translateY(-3px);
+}
+
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+
+/* Headings */
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+h4 {
+  margin-top: 15px;
+  color: #4a4a4a;
+}
+
+/* Paragraphs & Lists */
+p, li {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.team-list {
+  text-transform: uppercase;
+  text-align: center;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.team h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.team-slide {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.team-slide img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.team-slide img:hover {
+  transform: scale(1.05);
+}
+
+/* Student Count Highlight */
+#studentCount {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #4a90e2;
+}
+
+.testimonials {
+  padding: 40px 20px;
+  background-color: #fdfdfd;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  color: #222;
+}
+
+.testimonial-card {
+  display: inline-block;
+  width: 250px;
+  background-color: #fff;
+  margin: 15px;
+  padding: 20px;
+  border-radius: 12px;
+  vertical-align: top;
+  transition: transform 0.3s;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+}
+
+.testimonial-card img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.testimonial-card h3 {
+  margin: 10px 0 5px;
+  font-size: 18px;
+  color: #333;
+}
+
+.testimonial-card .quote {
+  font-style: italic;
+  color: #555;
+  margin: 5px 0;
+}
+
+.testimonial-card .desc {
+  font-size: 14px;
+  color: #666;
+  margin-top: 10px;
+}
+
+/* Map Styling */
+.map iframe {
+  width: 100%;
+  height: 500px;
+  border: none;
+  border-radius: 12px;
+  margin-top: 10px;
+}
+
+/* Footer */
+.footer {
+  background-color: rgba(24, 22, 22, 0.918);
+  color: #eee;
+  padding: 50px 20px;
+  font-size: 17px;
+  margin-top: 50px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-section h3 {
+  color: white;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 8px 0;
+}
+
+.footer-section ul li a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  color: rgb(53, 53, 160);
+}
+
+.footer-logo {
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #444;
+  margin-top: 20px;
+  color: #e4e0e0;
+}
